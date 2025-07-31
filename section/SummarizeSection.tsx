@@ -86,7 +86,7 @@ export default function SummarizeSection() {
           type="file"
           accept=".pdf"
           onChange={handleFileChange}
-          className="bg-gray-600/40 border border-gray-700 w-full backdrop-blur-2xl text-white rounded-xl px-2 py-3 cursor-pointer"
+          className="bg-gray-600/40 border border-gray-700 w-full md:w-fit backdrop-blur-2xl text-white rounded-xl px-2 py-3 cursor-pointer"
         />
 
         <button

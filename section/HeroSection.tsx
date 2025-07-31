@@ -14,7 +14,7 @@ export default function HeroSection() {
         <h1 className="text-4xl lg:text-6xl text-white font-bold text-center px-4">
           Your CV. GEMINI AI. Instant Insight.
         </h1>
-        <p className="text-white text-center max-w-4xl text-lg px-6">
+        <p className="text-white text-center max-w-4xl text-lg px-4">
           Upload your CV or resume and get an AI-generated professional summary,
           improvement suggestions, and an ATS score based on your target role — all in seconds.
         </p>
