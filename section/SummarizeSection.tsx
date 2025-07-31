@@ -78,15 +78,15 @@ export default function SummarizeSection() {
 
 
   return (
-    <div className="flex flex-col gap-6 text-white p-4 md:w-11/12 mx-auto">
-      <h1 className="text-3xl font-bold">Summarize CV</h1>
+    <div className="flex flex-col gap-6 text-white p-2 md:p-4 md:w-11/12 mx-auto">
+      <h1 className="text-2xl md:text-3xl font-bold">Summarize CV</h1>
 
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         <input
           type="file"
           accept=".pdf"
           onChange={handleFileChange}
-          className="bg-gray-600/40 border border-gray-700 backdrop-blur-2xl text-white rounded-xl ps-3 md:px-3 py-3 cursor-pointer"
+          className="bg-gray-600/40 border border-gray-700 w-full backdrop-blur-2xl text-white rounded-xl px-2 py-3 cursor-pointer"
         />
 
         <button

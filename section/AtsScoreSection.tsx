@@ -79,8 +79,8 @@ export default function AtsScoreSection() {
   };
 
   return (
-    <div className="flex flex-col gap-6 text-white p-4 md:w-11/12 mx-auto">
-      <h1 className="text-3xl font-bold">ATS Score Analyzer</h1>
+    <div className="flex flex-col gap-6 text-white p-2 md:p-4 md:w-11/12 mx-auto">
+      <h1 className="text-2xl md:text-3xl font-bold">ATS Score Analyzer</h1>
 
       <div className="flex flex-col md:flex-row justify-between gap-4">
         <div className="flex flex-col md:flex-row items-center gap-4">

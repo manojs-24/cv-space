@@ -11,16 +11,18 @@ export default function HeroSection() {
     <>
       {/* Title + Description */}
       <div className="flex flex-col items-center justify-center gap-6 mt-6">
-        <h1 className="text-4xl lg:text-6xl text-white font-bold text-center">
+        <h1 className="text-4xl lg:text-6xl text-white font-bold text-center px-4">
           Your CV. GEMINI AI. Instant Insight.
         </h1>
-        <p className="text-white text-center max-w-4xl text-lg px-1">
+        <p className="text-white text-center max-w-4xl text-lg px-6">
           Upload your CV or resume and get an AI-generated professional summary,
           improvement suggestions, and an ATS score based on your target role — all in seconds.
         </p>
 
         {/* Tab Buttons */}
-        <div className="flex gap-4 mt-4">
+
+
+        <div className="flex flex-col md:flex-row gap-4 mt-4">
           <button
             onClick={() => setActiveTab("summarize")}
             className={`px-6 py-3 rounded-full backdrop-blur-md transition font-semibold cursor-pointer
