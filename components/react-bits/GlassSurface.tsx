@@ -173,20 +173,25 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
     return () => resizeObserver.disconnect();
   }, []);
 
-  const supportsSVGFilters = () => {
-    // if (typeof window === "undefined" || typeof navigator === "undefined")
-    //   return false;
+  const [supportsSVG, setSupportsSVG] = useState(false);
+
+
+useEffect(() => {
+  const checkSupport = () => {
+    if (typeof window === "undefined" || typeof navigator === "undefined") return false;
 
     const isWebkit =
       /Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent);
     const isFirefox = /Firefox/.test(navigator.userAgent);
-
     if (isWebkit || isFirefox) return false;
 
     const div = document.createElement("div");
     div.style.backdropFilter = `url(#${filterId})`;
     return div.style.backdropFilter !== "";
   };
+
+  setSupportsSVG(checkSupport());
+}, []);
 
   const supportsBackdropFilter = () => {
     if (typeof window === "undefined") return false;
@@ -201,7 +206,7 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
       "--glass-saturation": saturation,
     } as React.CSSProperties;
 
-    const svgSupported = supportsSVGFilters();
+    const svgSupported = supportsSVG;
     const backdropFilterSupported = supportsBackdropFilter();
 
     if (svgSupported) {

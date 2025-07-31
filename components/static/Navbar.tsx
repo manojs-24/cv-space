@@ -11,12 +11,20 @@ export default function Navbar() {
           className="w-full rounded-3xl shadow-lg py-3 mt-4"
         >
           <div className="w-full flex justify-between items-center px-6">
-            <h2 className="text-white text-xl font-semibold font-eagle">CV-Space</h2>
+            <h2 className="text-white text-xl font-semibold font-eagle">
+              CV-Space
+            </h2>
 
-            <Link href="https://buymeacoffee.com/manojs24" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://buymeacoffee.com/manojs24"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="flex items-center space-x-4">
                 <img src="/cffe.png" alt="" className="w-7 h-7" />
-                <h1 className="text-white hidden md:block">Buy Developer a Coffee</h1>
+                <h1 className="text-white hidden md:block">
+                  Buy <a className="text-violet-400" href="https://www.linkedin.com/in/smanoj24/" target="_blank">Developer</a> a Coffee
+                </h1>
               </div>
             </Link>
           </div>

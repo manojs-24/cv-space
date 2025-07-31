@@ -27,7 +27,7 @@ export default function HeroSection() {
               ${
                 activeTab === "summarize"
                   ? "bg-white text-black shadow"
-                  : "text-white border border-white/30"
+                  : "text-white border bg-gray-500/20 backdrop-blur-2xl border-white/30"
               }`}
           >
             Summarize
@@ -39,7 +39,7 @@ export default function HeroSection() {
               ${
                 activeTab === "ats"
                   ? "bg-white text-black shadow"
-                  : "text-white border border-white/30"
+                  : "text-white border bg-gray-500/20 backdrop-blur-2xl border-white/30 "
               }`}
           >
             Check ATS Score
