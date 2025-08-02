@@ -13,31 +13,25 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "CV-Space | Free Online CV & Resume Analyzer",
+  title: "CV-Space | Free AI-Powered CV & Resume Analyzer",
   description:
-    "Clip-S is a free, secure, end-to-end encrypted online clipboard. Share and sync your data across devices instantly without signup.",
+    "CV-Space is a free, secure AI-based resume analyzer that gives you professional summaries, suggestions, and ATS scores — all in seconds.",
   keywords: [
-    "online clipboard",
-    "free clipboard",
-    "secure clipboard",
-    "encrypted clipboard",
-    "share text online",
-    "internet clipboard",
+    "resume analyzer",
+    "CV analysis",
+    "AI resume checker",
+    "ATS resume checker",
+    "resume summary generator",
+    "online resume analyzer",
+    "free CV analysis",
+    "AI resume tool",
   ],
   openGraph: {
-    title: "Clip-S | Free Online Clipboard",
+    title: "CV-Space | Free AI Resume Analyzer",
     description:
-      "Transfer text across devices instantly using Clip-S — no login needed.",
-    url: "https://clip-s.vercel.app",
-    siteName: "Clip-S",
-    images: [
-      {
-        url: "https://clip-s.vercel.app/assets/clip-s.png",
-        width: 1200,
-        height: 630,
-        alt: "Clip-S Preview",
-      },
-    ],
+      "Upload your CV or resume and instantly get a professional summary, improvement tips, and ATS score — powered by AI.",
+    url: "https://cv-space.vercel.app",
+    siteName: "CV-Space",
     type: "website",
   },
   robots: {
@@ -45,7 +39,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   verification: {
-    google: "cbjarPwQwmJzfCVzjLVGtMwNIvTr7yJnAZdK1qQQTUg",
+    google: "cbjarPwQwmJzfCVzjLVGtMwNIvTr7yJnAZdK1qQQTUg", // replace with your own Google Search Console code
   },
 };
 
